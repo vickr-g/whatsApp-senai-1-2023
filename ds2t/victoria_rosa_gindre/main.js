@@ -1,6 +1,11 @@
 'use strict'
 
-import { contatos } from "./contato.js"
+// import { contatos } from "./contato.js"
+
+import { pesquisarTelefone } from "./import-API/main.js"
+
+let contatos = await pesquisarTelefone('11966578996')
+
 
 const criarCard = (contato, indice) => {
 
